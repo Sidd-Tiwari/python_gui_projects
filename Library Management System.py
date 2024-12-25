@@ -1,4 +1,65 @@
-import tkinter as tk
+"""
+    A class to create a graphical user interface for a Library Management System using Tkinter.
+    Attributes:
+    -----------
+    library : Library
+        An instance of the Library class to manage library operations.
+    root : Tk
+        The root window of the Tkinter application.
+    title_label : Label
+        A label widget to display the title of the application.
+    add_button : Button
+        A button widget to add a new book to the library.
+    display_button : Button
+        A button widget to display all books in the library.
+    search_button : Button
+        A button widget to search for a book in the library.
+    checkout_button : Button
+        A button widget to check out a book from the library.
+    return_button : Button
+        A button widget to return a book to the library.
+    exit_button : Button
+        A button widget to exit the application.
+    new_window : Toplevel
+        A new window for various operations like adding, searching, checking out, and returning books.
+    title_entry : Entry
+        An entry widget to input the title of a book.
+    author_entry : Entry
+        An entry widget to input the author of a book.
+    isbn_entry : Entry
+        An entry widget to input the ISBN of a book.
+    search_entry : Entry
+        An entry widget to input the title of a book to search.
+    checkout_entry : Entry
+        An entry widget to input the title of a book to check out.
+    return_entry : Entry
+        An entry widget to input the title of a book to return.
+    Methods:
+    --------
+    __init__(root):
+        Initializes the LibraryGUI with the root window and sets up the GUI.
+    create_widgets():
+        Creates and packs the widgets for the main window.
+    add_book():
+        Opens a new window to add a book to the library.
+    add_book_to_library():
+        Adds the book to the library and closes the add book window.
+    display_books():
+        Displays all books in the library in a message box.
+    search_book():
+        Opens a new window to search for a book in the library.
+    search_book_in_library():
+        Searches for the book in the library and displays the result in a message box.
+    check_out_book():
+        Opens a new window to check out a book from the library.
+    check_out_book_from_library():
+        Checks out the book from the library and displays the result in a message box.
+    return_book():
+        Opens a new window to return a book to the library.
+    return_book_to_library():
+        Returns the book to the library and displays the result in a message box.
+    """
+    import tkinter as tk
 from tkinter import messagebox
 
 class Book:
